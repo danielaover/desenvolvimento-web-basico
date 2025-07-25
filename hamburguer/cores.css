@@ -1,0 +1,29 @@
+.nav-list {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+}
+
+.menu-btn {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* Versão mobile */
+@media (max-width: 600px) {
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    background-color: #ccc;
+    padding: 10px;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .nav-list.show {
+    display: flex;
+  }
+}

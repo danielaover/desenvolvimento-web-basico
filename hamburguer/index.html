@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <link rel="stylesheet" href="./cores.css">
+<nav class="nav">
+    <div class="menu-btn" onclick="toggleMenu()">☰</div>
+    <ul class="nav-list">
+      <li><a href="pag1">Início</a></li>
+      <li><a href="pag2">Sobre</a></li>
+      <li><a href="pag3">Contato</a></li>
+    </ul>
+  </nav>
+</head>
+<body>
+    <script>
+  function toggleMenu() {
+    const navList = document.querySelector('.nav-list');
+    navList.classList.toggle('show');
+  }
+</script>
+
+</body>
+</html>
